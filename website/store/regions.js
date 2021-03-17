@@ -65,7 +65,7 @@ export const getters = {
       if (!queryZipCoords) {
         locations = [];
         state.filterError =
-          "Oops! We couldn't find that ZIP code in this state. Please double check it or try a different ZIP code.";
+          "Oops! We couldn't find that ZIP code in this state. Please double check it or click the View Other States link in the header above to search in your state.";
       } else {
         let radius;
         const queryRadius = rootState.route.query.radius;
